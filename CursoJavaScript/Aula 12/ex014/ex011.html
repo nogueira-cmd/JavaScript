@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exer9 em forma de Site </title>
+</head>
+<body>
+    <h1>Teste de nacionalidade brasileira</h1>
+    Sua Nacionalidade: <input type="string" name="txtnac" id="txtnac"> 
+    <input type="button" value="Verificar" onclick ="verificar()">
+    <div id = "res">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtv = window.document.querySelector('input#txtnac')
+            var res = window.document.querySelector('div#res')
+            var nac = txtv.value
+            res.innerHTML = `<p>Sua nacionalidade é <strong>${nac}</strong> </p>`
+            if (nac == 'Brasil'){
+                res.innerHTML += `<p> Você é <strong>Brasileiro</strong>  </p>`
+                res.innerHTML += `<p>País da corrupção, boa sorte!</p>`
+            }else{
+                res.innerHTML += `<p>Teve sorte de não nascer no Brasil</p>`
+            }
+        }
+
+
+    </script>
+</body>
+</html>
