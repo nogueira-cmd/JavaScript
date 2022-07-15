@@ -1,0 +1,22 @@
+{
+  "name": "up2",
+  "version": "1.0.0",
+  "description": "API REST com estrutura CRUD / desafio upFlow.me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./index.js localhost 4000"
+  },
+  "keywords": [],
+  "author": "Matheus da Silva Nogueira",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.0",
+    "node-cron": "^3.0.1",
+    "nodemon": "^2.0.18",
+    "uuid": "^8.3.2"
+  }
+}
